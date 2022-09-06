@@ -1,0 +1,17 @@
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\bin\Debug\net6.0\Hahn.Application.DAL.deps.json
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\bin\Debug\net6.0\Hahn.Application.DAL.runtimeconfig.json
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\bin\Debug\net6.0\Hahn.Application.DAL.dll
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\bin\Debug\net6.0\Hahn.Application.DAL.pdb
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\bin\Debug\net6.0\Hahn.Application.Domain.dll
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\bin\Debug\net6.0\Hahn.Application.Domain.pdb
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\obj\Debug\net6.0\Hahn.Application.DAL.csproj.AssemblyReference.cache
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\obj\Debug\net6.0\Hahn.Application.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\obj\Debug\net6.0\Hahn.Application.DAL.AssemblyInfoInputs.cache
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\obj\Debug\net6.0\Hahn.Application.DAL.AssemblyInfo.cs
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\obj\Debug\net6.0\Hahn.Application.DAL.csproj.CoreCompileInputs.cache
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\obj\Debug\net6.0\Hahn.Application.DAL.csproj.CopyComplete
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\obj\Debug\net6.0\Hahn.Application.DAL.dll
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\obj\Debug\net6.0\refint\Hahn.Application.DAL.dll
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\obj\Debug\net6.0\Hahn.Application.DAL.pdb
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\obj\Debug\net6.0\Hahn.Application.DAL.genruntimeconfig.cache
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.DAL\obj\Debug\net6.0\ref\Hahn.Application.DAL.dll

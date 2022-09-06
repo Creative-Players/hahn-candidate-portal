@@ -1,0 +1,8 @@
+<app-candidate-type-form *ngIf="model" [heading]="'Edit Job Category'" 
+[model]="candidateTypeModel"
+(onSaveChanges)="onSaveChanges($event)" >
+</app-candidate-type-form>
+
+<div class="center" >
+    <mat-spinner *ngIf="!model" ></mat-spinner>
+</div>

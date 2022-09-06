@@ -1,0 +1,104 @@
+<div *ngIf="isFormLoded" fxLayout="column" fxLayoutAlign="space-between stretch" fxFlexFil fxFill
+    class="components-container-gt-xs ">
+
+    <form (submit)="saveChanges()" (keydown.enter)="$event.preventDefault()"  [formGroup]="form" fxLayout="row"
+        fxLayoutAlign="space-between stretch" fxFlexFil fxFill fxLayoutGap="20px">
+
+        <div fxFlex="100" fxLayoutGap="10px" fxLayout="column" class="mat-elevation-z2 contact-add">
+
+            <div fxFlex="10" fxLayout="row" fxLayoutAlign="space-between center">
+
+                <h3 class="mat-headline">{{heading}}</h3>
+                <div fxLayout="row" fxLayoutAlign="end center" fxFlex="10">
+                    <button type="button" mat-icon-button (click)="onCancel()">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </div>
+            </div> 
+             <mat-divider></mat-divider>        
+                <div fxFlex fxLayoutGap="10px" fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="start start">
+                    <mat-form-field fxFlex="35" appearance="outline">
+                        <mat-label>FirstName </mat-label>
+                        <input matInput placeholder=" First Name"  formControlName="firstName" >  
+                        <mat-error
+                            *ngIf="f.firstName.invalid && (f.firstName.touched || f.firstName.dirty) && f.firstName.hasError('required')">
+                            FirstName is required.</mat-error>                     
+                    </mat-form-field>
+                    <mat-form-field fxFlex="35" appearance="outline">
+                        <mat-label>Last Name </mat-label>
+                        <input matInput placeholder="Last Name"  formControlName="lastName" > 
+ 					     <mat-error
+                        *ngIf="f.lastName.invalid && (f.lastName.touched || f.lastName.dirty) && f.lastName.hasError('required')">
+                        LastName is required.</mat-error> 
+                    </mat-form-field>
+                    <mat-form-field fxFlex="30" appearance="outline">
+                        <mat-label>Email </mat-label>
+                        <input matInput placeholder="Email"  formControlName="email" >                       
+                         <mat-error *ngIf="f.email.invalid && (f.email.touched || f.email.dirty)">
+                                <small *ngIf="f.email.errors?.required">Email is required</small>    	
+                                <small *ngIf="f.email.errors?.pattern">Please provide a valid email address</small>
+                            </mat-error>
+                    </mat-form-field>
+                </div> 
+               <div fxFlex fxLayoutGap="10px" fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="start start">
+                           
+                            <mat-form-field fxFlex="50" appearance="outline">
+                             <mat-label>Date Of Birth</mat-label>
+                               <input formControlName="dateOfBirth" matInput [matDatepicker]="birthPicker"
+                                (click)="birthPicker.open()" placeholder="Date Of Birth">
+                               <mat-datepicker-toggle matSuffix [for]="birthPicker"></mat-datepicker-toggle>
+                               <mat-datepicker #birthPicker></mat-datepicker>
+                              </mat-form-field>  
+                             
+                       <mat-form-field fxFlex="50" appearance="outline">
+                       <mat-label>Job Category </mat-label>
+                       <mat-select formControlName="jobOptionId">
+                           <mat-option>Please Choose job category </mat-option>
+                           <mat-option *ngFor="let item of candidateTypeList" [value]="item.id">
+                               {{item.name}}</mat-option>
+                       </mat-select>
+                       <mat-error
+                        *ngIf="f.jobOptionId.invalid && (f.jobOptionId.touched || f.jobOptionId.dirty) && f.jobOptionId.hasError('required')">
+                        job category is required.</mat-error> 
+                   </mat-form-field>							 
+                </div>	
+                <div fxFlex fxLayoutGap="10px" fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="start start">
+                    <mat-form-field fxFlex="35" appearance="outline">
+                        <mat-label>Mobile Number </mat-label>
+                        <input matInput placeholder="Mobile Number"  formControlName="phoneNumber" > 
+                        <mat-error
+                        *ngIf="f.phoneNumber.invalid && (f.phoneNumber.touched || f.phoneNumber.dirty) && f.phoneNumber.hasError('required')">
+                        Phone Number is required.</mat-error> 						
+                    </mat-form-field>                   
+                    <mat-form-field fxFlex="65" appearance="outline">
+                        <mat-label>Country of Origin</mat-label>
+                        <input matInput placeholder="Country of Origin"  formControlName="countryOfOrigin" >                       
+                    </mat-form-field>
+                </div> 
+                <div fxFlex fxLayoutGap="10px" fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="start start">
+                    <mat-form-field fxFlex="100" appearance="outline">
+                        <mat-label>Address </mat-label>
+                        <input matInput placeholder="Address"  formControlName="address" > 
+                       <mat-error
+                        *ngIf="f.address.invalid && (f.address.touched || f.address.dirty) && f.address.hasError('required')">
+                        address is required.</mat-error> 						
+                    </mat-form-field>
+                   
+                </div>  			
+              <mat-divider></mat-divider>
+            <div fxFlex class="contact-save" fxLayout="row" fxLayoutAlign="end stretch">
+                <div fxFlex="50" fxLayout="row" fxLayoutAlign="">
+                    <button color="primary" mat-raised-button [disabled]="!form.valid">SAVE</button>                  
+                    <button type="button" (click)="onCancel()" mat-raised-button>CANCEL</button>
+                </div>
+                <div fxFlex="50" fxLayout="row" fxLayoutAlign="">
+                </div>
+            </div>
+            <div fxFlex fxLayoutGap="10px" fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="start start">
+            </div>
+
+        </div>
+    </form>
+</div>  
+ 
+       

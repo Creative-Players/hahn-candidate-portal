@@ -1,0 +1,12 @@
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.Domain\bin\Debug\net6.0\Hahn.Application.Domain.deps.json
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.Domain\bin\Debug\net6.0\Hahn.Application.Domain.dll
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.Domain\bin\Debug\net6.0\Hahn.Application.Domain.pdb
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.Domain\obj\Debug\net6.0\Hahn.Application.Domain.csproj.AssemblyReference.cache
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.Domain\obj\Debug\net6.0\Hahn.Application.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.Domain\obj\Debug\net6.0\Hahn.Application.Domain.AssemblyInfoInputs.cache
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.Domain\obj\Debug\net6.0\Hahn.Application.Domain.AssemblyInfo.cs
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.Domain\obj\Debug\net6.0\Hahn.Application.Domain.csproj.CoreCompileInputs.cache
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.Domain\obj\Debug\net6.0\Hahn.Application.Domain.dll
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.Domain\obj\Debug\net6.0\refint\Hahn.Application.Domain.dll
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.Domain\obj\Debug\net6.0\Hahn.Application.Domain.pdb
+C:\HahnPOC\Hahn.Application-api\Hahn.Application.Domain\obj\Debug\net6.0\ref\Hahn.Application.Domain.dll

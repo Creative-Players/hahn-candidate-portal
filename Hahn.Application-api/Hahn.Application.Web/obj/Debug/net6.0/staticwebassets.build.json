@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LbJFnCV/4eMMIHuKsu6v+5Rgqz3kj3Mznhqg16X1TCQ=",
+  "Source": "Hahn.Application.Web",
+  "BasePath": "_content/Hahn.Application.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

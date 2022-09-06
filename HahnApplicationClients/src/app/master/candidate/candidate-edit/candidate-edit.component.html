@@ -1,0 +1,8 @@
+<app-candidate-form *ngIf="model" [heading]="'Edit Personnel'" 
+[model]="candidateModel"
+(onSaveChanges)="onSaveChanges($event)" >
+</app-candidate-form>
+
+<div class="center" >
+    <mat-spinner *ngIf="!model" ></mat-spinner>
+</div>

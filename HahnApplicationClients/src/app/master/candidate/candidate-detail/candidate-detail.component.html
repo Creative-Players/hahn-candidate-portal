@@ -1,0 +1,50 @@
+
+<div id="candidateDetailControl" #candidateDetailControl fxLayout="column" fxLayoutAlign="space-between stretch" fxFlexFil fxFill
+class="components-container-gt-xs"> 
+<div fxFlex="100" fxLayoutGap="10px" fxLayout="column" class="mat-elevation-z2 contact-add">
+   <div fxFlex="10" fxLayout="row" fxLayoutAlign="space-between center">
+     <a matLine  color="primary">
+         <button mat-flat-button color="primary" (click)="downloadCandidate()">
+         <mat-icon>download</mat-icon> Candidate Details
+         </button>
+       </a>
+       <div fxLayout="row" fxLayoutAlign="end center" fxFlex="10">
+           <button type="button" mat-icon-button (click)="onCancel()">
+               <mat-icon>close</mat-icon>
+           </button>
+       </div>           
+   </div>
+   <mat-divider></mat-divider>
+   <div *ngIf="candidateData" fxFlex fxLayoutGap="10px" fxLayout="row" fxLayoutAlign="start start">
+         
+       <table class="mat-elevation-z2 table-index">
+          <tr>
+		    <th>First Name</th>
+            <td>{{ candidateData.firstName }}</td>  
+            <th>Last Name</th>
+            <td>{{ candidateData.lastName }}</td>       
+            <th> Email</th>
+            <td>{{ candidateData.email }}</td>
+         </tr>
+         <tr>
+             <th> Contact Number </th>
+             <td>{{ candidateData.phoneNumber}}</td>       
+             <th>Date of Birth </th>
+             <td colspan="3">{{candidateData.dateOfBirth | date}}</td>
+             
+           </tr>
+          
+           <tr>
+             <th>Country of Origin</th>
+             <td>{{ candidateData.countryOfOrigin}}</td>       
+             <th>Present Address</th>
+             <td colspan="3">{{ candidateData.address}}</td>	
+             
+           </tr>
+           
+       </table>
+      
+    
+   <mat-divider></mat-divider>  
+   <br>      
+</div> 

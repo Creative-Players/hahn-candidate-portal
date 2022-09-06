@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  db:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=@A1w2a3s4e5
+  hahn.application.web:
+    image: ${DOCKER_REGISTRY-}hahnapplicationweb
+    build:
+      context: .
+      dockerfile: Hahn.Application.Web/Dockerfile
+    depends_on:
+          - db

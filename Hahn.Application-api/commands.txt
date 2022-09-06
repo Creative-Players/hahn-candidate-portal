@@ -1,0 +1,57 @@
+You can accept the EULA by specifying the --accept-eula command line option
+docker exec -it aeb15e6e2a2389501cf80880128d2a186717b2fb4bd7d06870171bd6ffa19c1a /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '@A1w2a3s4e5'
+
+/opt/mssql-tools/bin/sqlcmd -S localhost,1433 -U SA -P myPassword -i "/var/opt/mssql/database/auto-setup-db.sql" -o "/var/opt/mssql/database/auto-setup-db.log"
+
+https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver16&pivots=cs1-bash
+https://hackernoon.com/a-guide-to-running-aspnet-core-and-sql-server-from-docker-wu4034xc
+   1. Develop a WebApi based on a DDD Pattern in .Net6
+
+2. Develop a Angular CRUD Application to maintain the data with validation in front and backend (use a
+
+           FluentValidation Syntax in Both)
+
+3. The Angular Application also should have a overview with an grid
+
+4. The Application should be startable with a docker-compose and checkable
+
+5. The Repository should have a git history.
+
+6. Record a video declaring your application (in english)
+
+Build .net core
+1. dotnet build /src/Hahn.Application.Web -c Release -o /app/build
+2  dotnet publish "Hahn.Application.Web.csproj" -c Release -o /app/publish
+
+port mappinng
+
+docker run -p 7001:80 enanglaw/hahnapplicationweb 
+
+$ docker build -t myapp.
+docker build -f ./Dockerfile --force-rm -t hahn-candidate-port:v1 .
+docker run -d -p 8000:80 --name 39346c6529 -v /temp:/ws_persist/ 39346c6529
+$ docker run -d -p 8000:80 --name hahnapplicationweb -v /temp:/ws_persist/ myapp
+
+
+docker run -p 7001:80  558ad3f5a097
+Map docker with mssql/server
+
+docker run -e 'accept_eula-y' -e 'sa_password-@A1w2a3s4e5' -e 'mssql_pid-express' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
+
+Digest: sha256:24e58f079a083e975b0066f30bec7301d5a2cb0aad0cc50156218ae1c3d757c6
+Status: Downloaded newer image for mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+7d6525f36eb827956242325df270699917d4def50a1ab57caa9c60e4e51a718b
+Data Source=.\;Initial Catalog=HahnApplicationDb;User ID=sa
+
+docker exec -it 7d6525f36eb827956242325df270699917d4def50a1ab57caa9c60e4e51a718b /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P @A1w2a3s4e5
+
+sudo docker pull mcr.microsoft.com/mssql/server:2022-latest
+
+sudo docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=@A1w2a3s4e5" \ -p 1433:1433 --name sql1 --hostname sql1 \   -d \  mcr.microsoft.com/mssql/server:2022-latest
+
+
+
+
+docker exec it
+hahnapplicationweb:dev
+
